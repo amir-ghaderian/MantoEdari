@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/product.service';
-import {Carousel,initTE,} from "tw-elements";
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    initTE({ Carousel });
+ 
   }
 
 }
