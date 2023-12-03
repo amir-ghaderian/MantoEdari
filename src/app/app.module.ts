@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HeaderComponent } from './header/header.component';
+import { DetailComponent } from './detail/detail.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     CarouselComponent,
-    HeaderComponent
+    HeaderComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
