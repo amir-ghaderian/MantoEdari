@@ -2,12 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { DetailComponent } from './detail/detail.component';
-import { AppComponent } from './app.component';
+
+
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
-  {path:'main',component:MainComponent},
-  {path:"detail/:id",component:DetailComponent},
-  {path:'',component:AppComponent}
+
+ 
+  { path: "detail/:id", component: DetailComponent },
+  { path: "mainlist", component: MainComponent }
+
+
+
+
 ];
 
 @NgModule({
@@ -15,5 +22,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents=[MainComponent,DetailComponent]
 
