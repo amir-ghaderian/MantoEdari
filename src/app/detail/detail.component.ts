@@ -9,9 +9,10 @@ import { ProductService } from 'src/product.service';
 })
 export class DetailComponent implements OnInit {
   isToggle: any;
-  id:any;
-  select:any;
-  constructor(private route: ActivatedRoute ,private psv:ProductService) { }
+  id: any;
+  select: any;
+  selectedImage: any;
+  constructor(private route: ActivatedRoute, private psv: ProductService) { }
 
   ngOnInit(): void {
     const stringId = this.route.snapshot.paramMap.get('id');
@@ -23,7 +24,8 @@ export class DetailComponent implements OnInit {
       this.psv.clothes.forEach((element: any) => {
         if (element.id === this.id) {
           this.select = element;
-
+          this.selectedImage=this.select.images[0];
+console.log(this.select)
 
         }
       });
