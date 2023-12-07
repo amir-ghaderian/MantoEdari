@@ -10,7 +10,7 @@ const routes: Routes = [
 
  
   { path: "detail/:id", component: DetailComponent },
-  { path: "mainlist", component: MainComponent }
+  { path: "", component: MainComponent }
 
 
 
