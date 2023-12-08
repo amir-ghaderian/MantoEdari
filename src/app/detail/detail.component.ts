@@ -24,8 +24,8 @@ export class DetailComponent implements OnInit {
       this.psv.clothes.forEach((element: any) => {
         if (element.id === this.id) {
           this.select = element;
-          this.selectedImage=this.select.images[0];
-console.log(this.select)
+          this.selectedImage=this.select.banner;
+
 
         }
       });
