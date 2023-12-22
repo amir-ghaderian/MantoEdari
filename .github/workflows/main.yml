@@ -25,7 +25,7 @@ jobs:
       run: npm run build --prod
 
     - name: Deploy to Biz.nf
-      uses: github.com/amir-ghaderian/MantoEdari
+      uses: ./.github.com/amir-ghaderian/MantoEdari
       with:
         server:  f31-preview.biz.nf # Replace with your Biz.nf FTP server
         username: ${{ secrets.FTP_USERNAME }}  # Add your FTP username as a secret in your repository settings
