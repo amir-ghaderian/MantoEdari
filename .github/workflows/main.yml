@@ -17,13 +17,7 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-      - name: Checks out flutter
-        uses: actions/checkout@v2
-        with:
-          repository: flutter/flutter
-          token: ${{ github.token }}
-          ref: refs/heads/master
-          path: flutter
+
     - name: Install dependencies
       run: npm install
 
