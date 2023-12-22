@@ -30,6 +30,6 @@ jobs:
         server: ns1.biz.nf # Replace with your Biz.nf FTP server
         username: ${{ secrets.FTP_USERNAME }}  # Add your FTP username as a secret in your repository settings
         password: ${{ secrets.FTP_PASSWORD }}  # Add your FTP password as a secret in your repository settings
-        local-dir: ./dist/your-angular-project-name  # Replace with the path to your Angular build output
+        local-dir: ./dist/manto-edari/index.html  # Replace with the path to your Angular build output
         remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
 
