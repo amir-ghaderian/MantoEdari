@@ -6,17 +6,17 @@ on:
       - main  # Set your main branch here
 
 jobs:
-  build:
+   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code  
+     - name: Checkout code  
       uses: amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@main
     
-    - name: Checkout action 
-    uses: actions/checkout@v3
+     - name: Checkout action 
+      uses: actions/checkout@v3
 
-    - name: Set up Node.js
+     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
         node-version: '14'
