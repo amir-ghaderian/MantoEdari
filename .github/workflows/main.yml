@@ -17,7 +17,13 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '14'
-
+      - name: Checks out flutter
+        uses: actions/checkout@v2
+        with:
+          repository: flutter/flutter
+          token: ${{ github.token }}
+          ref: refs/heads/master
+          path: flutter
     - name: Install dependencies
       run: npm install
 
@@ -33,10 +39,3 @@ jobs:
         local-dir: ./dist/manto-edari/index.html  # Replace with the path to your Angular build output
         remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
 
-      - name: Checks out flutter
-        uses: actions/checkout@v2
-        with:
-          repository: flutter/flutter
-          token: ${{ github.token }}
-          ref: refs/heads/master
-          path: flutter
