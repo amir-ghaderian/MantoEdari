@@ -10,8 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+     - name: Checks out flutter
+       uses: actions/checkout@v2
+       with:
+       repository: flutter/flutter
+       token: ${{ github.token }}
+       ref: refs/heads/master
+        path: flutter
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
