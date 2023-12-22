@@ -27,9 +27,16 @@ jobs:
     - name: Deploy to Biz.nf
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: mantooedarii.mypressonline.com, f31-preview.biz.nf # Replace with your Biz.nf FTP server
+        server:  f31-preview.biz.nf # Replace with your Biz.nf FTP server
         username: ${{ secrets.FTP_USERNAME }}  # Add your FTP username as a secret in your repository settings
         password: ${{ secrets.FTP_PASSWORD }}  # Add your FTP password as a secret in your repository settings
         local-dir: ./dist/manto-edari/index.html  # Replace with the path to your Angular build output
         remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
 
+      - name: Checks out flutter
+        uses: actions/checkout@v2
+        with:
+          repository: flutter/flutter
+          token: ${{ github.token }}
+          ref: refs/heads/master
+          path: flutter
