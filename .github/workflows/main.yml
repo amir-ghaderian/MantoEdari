@@ -28,8 +28,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ns1.biz.nf # Replace with your Biz.nf FTP server
-        username: ${{ secrets.biz_USERNAME }}  # Add your FTP username as a secret in your repository settings
-        password: ${{ secrets.biz_PASSWORD }}  # Add your FTP password as a secret in your repository settings
+        username: ${{ secrets.FTP_USERNAME }}  # Add your FTP username as a secret in your repository settings
+        password: ${{ secrets.FTP_PASSWORD }}  # Add your FTP password as a secret in your repository settings
         local-dir: ./dist/your-angular-project-name  # Replace with the path to your Angular build output
         remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
 
