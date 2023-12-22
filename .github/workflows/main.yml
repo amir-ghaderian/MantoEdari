@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout code  
-      uses: amir-ghaderian/GitHub-Actions/path/to/action/dir@master
+      uses: amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@master
     
     - name: Set up Node.js
       uses: actions/setup-node@v2
