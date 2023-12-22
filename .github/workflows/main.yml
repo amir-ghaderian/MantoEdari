@@ -1,7 +1,35 @@
-- name: Build Angular app
-        run: npm run build 
-      - name: firebase mashang
-        run: npm install -g firebase-tools 
+name: Deploy to Biz.nf
 
-      - name: Deploy to Firebase Hosting
-        run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }}
+on:
+  push:
+    branches:
+      - main  # Set your main branch here
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build Angular app
+      run: npm run build --prod
+
+    - name: Deploy to Biz.nf
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ns1.biz.nf # Replace with your Biz.nf FTP server
+        username: ${{ secrets.biz_USERNAME }}  # Add your FTP username as a secret in your repository settings
+        password: ${{ secrets.biz_PASSWORD }}  # Add your FTP password as a secret in your repository settings
+        local-dir: ./dist/your-angular-project-name  # Replace with the path to your Angular build output
+        remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
+
