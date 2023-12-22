@@ -12,7 +12,7 @@ jobs:
     steps:
      - name: Checkout code  
       uses: amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@main
-    
+    actions/checkout Default: ${{ github.repository }}
      - name: Checkout action 
       uses: actions/checkout@v3
 
