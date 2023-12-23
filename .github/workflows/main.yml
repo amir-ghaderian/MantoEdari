@@ -22,6 +22,6 @@ jobs:
       uses: ./ amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@main  
       with:
         server: ns2.biz.nf 
-        username: 4416740_4416740  
+        username: ${{ secrets.username }}
         password: ${{ secrets.password }}
 
