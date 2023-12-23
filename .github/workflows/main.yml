@@ -24,9 +24,5 @@ jobs:
         server: ns2.biz.nf 
         username: ${{ secrets.username }}
         password: ${{ secrets.password }}
-         exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          fileToExclude.txt
+         
 
