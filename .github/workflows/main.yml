@@ -1,38 +1,27 @@
-name: Deploy to Biz.nf
-
-on:
-  push:
-    branches:
-      - main  # Set your main branch here
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-   build:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-     - name: Checkout code  
-      uses: amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@main
-    actions/checkout Default: ${{ github.repository }}
-     - name: Checkout action 
+    - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-     - name: Set up Node.js
+    - name: Use Node.js 16
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build Angular app
-      run: npm run build --prod
-
-    - name: Deploy to Biz.nf
-      uses: ./.github.com/amir-ghaderian/MantoEdari
+        node-version: '16'
+      
+    - name: 🔨 Build Project
+      run: |
+        npm install
+        npm run build
+    
+    - name: 📂 Sync files
+      uses: ./ amir-ghaderian/MantoEdari/GitHub-Actions/path/to/action/dir@main  
       with:
-        server:  f31-preview.biz.nf # Replace with your Biz.nf FTP server
-        username: ${{ secrets.FTP_USERNAME }}  # Add your FTP username as a secret in your repository settings
-        password: ${{ secrets.FTP_PASSWORD }}  # Add your FTP password as a secret in your repository settings
-        local-dir: ./dist/manto-edari/index.html  # Replace with the path to your Angular build output
-        remote-dir: /mantooedarii.mypressonline.com/index.html # Replace with the directory where your website should be hosted
+        server: ns2.biz.nf 
+        username: 4416740_4416740  
+        password: ${{ secrets.password }}
 
