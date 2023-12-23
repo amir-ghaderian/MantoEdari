@@ -1,0 +1,11 @@
+name: FTP Deploy Action
+description: Deploy Angular project to Biz.nf hosting via FTP
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.server }}
+    - ${{ secrets.FTP_USERNAME }}
+    - ${{ secrets.FTP_PASSWORD }}
+    - ${{ inputs.local_dir }}
+    - ${{ inputs.remote_dir }}
