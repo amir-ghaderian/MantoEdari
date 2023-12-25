@@ -1,15 +1,13 @@
 <div class="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4">
     <div class="xl:w-2/6 lg:w-2/5 w-80 md:block hidden">
         <img class="w-full" alt="image of a girl posing" src="{{selectedImage}}" />
-        <img *ngFor="let pic of select.images" class="mt-6 w-full" alt="image of a girl posing" src="{{pic}}" />
+       <div class="flex w-full h-48"><img *ngFor="let pic of select.images"     class="mt-6 w-full" alt="image of a girl posing" src="{{pic}}" /></div> 
     </div>
     <div class="md:hidden">
         <img class="w-full" alt="image of a girl posing" src="{{selectedImage}}" />
-        <div class="flex items-center justify-between mt-3 space-x-4 md:space-x-0">
-            <img alt="image-tag-one" class="md:w-48 md:h-48 w-full" src="https://i.ibb.co/cYDrVGh/Rectangle-245.png" />
-            <img alt="image-tag-one" class="md:w-48 md:h-48 w-full" src="https://i.ibb.co/f17NXrW/Rectangle-244.png" />
-            <img alt="image-tag-one" class="md:w-48 md:h-48 w-full" src="https://i.ibb.co/cYDrVGh/Rectangle-245.png" />
-            <img alt="image-tag-one" class="md:w-48 md:h-48 w-full" src="https://i.ibb.co/f17NXrW/Rectangle-244.png" />
+        <div class="flex w-full h-48 felex-wrap justify-between mt-3 space-x-4 md:space-x-0"  >
+            <img *ngFor="let pic of select.images " class="w-20 h-28"  src="{{pic}}" />
+           
         </div>
     </div>
     <div class="xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0 mt-6">

@@ -12,6 +12,7 @@ export class DetailComponent implements OnInit {
   id: any;
   select: any;
   selectedImage: any;
+  i=0;
   constructor(private route: ActivatedRoute, private psv: ProductService) { }
 
   ngOnInit(): void {
@@ -24,7 +25,7 @@ export class DetailComponent implements OnInit {
       this.psv.clothes.forEach((element: any) => {
         if (element.id === this.id) {
           this.select = element;
-          this.selectedImage=this.select.banner;
+          this.selectedImage=this.select.images[0]
 
 
         }
