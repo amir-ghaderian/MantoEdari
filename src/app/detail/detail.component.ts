@@ -12,6 +12,7 @@ export class DetailComponent implements OnInit {
   id: any;
   select: any;
   selectedImage: any;
+  currentIndex:any;
   i=0;
   constructor(private route: ActivatedRoute, private psv: ProductService) { }
 
@@ -35,6 +36,12 @@ export class DetailComponent implements OnInit {
     } else {
       console.log('no id on url')
     }
+
+  }
+  showImg(i: number) {
+    this.selectedImage = this.select.images[i]
+    this.currentIndex = i
+
 
   }
 

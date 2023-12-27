@@ -1,0 +1,4 @@
+.bgbtn{
+    background-origin: border-box;
+    background-clip: content-box;
+}
