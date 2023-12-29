@@ -1,9 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Input } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+  @Input() newPruduct: any = {
+    title: "",
+    id: 0,
+    images: [""],
+    price: 0,
+    descroption: [""]
+
+  }
   public clothes: any = [
     {
       title: "مانتوفیونا", id: 100, images: ["assets/1.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg"], banner: "assets/11.jpg", price: 3999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -126,6 +134,11 @@ export class ProductService {
         "بسته شدن شلوار: زیپ و دکمه"]
     }
   ];
+  public addNew() {
+    let customObj = this.newPruduct;
+    this.clothes.push({ title: customObj.title, id: customObj.id, imges: customObj.images, descrption: customObj.descrption, price: customObj.price })
+    console.log(this.clothes)
+  }
   constructor() { }
 
 
