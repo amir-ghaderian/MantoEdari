@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/product.service';
 import {
   Input,
   initTE,
@@ -11,10 +12,18 @@ initTE({ Input });
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  newPrudct: any;
+  add:any;
+  constructor(private pruduSer: ProductService) {
+    this.newPrudct = pruduSer.newPruduct;
+  
   }
 
+  ngOnInit(): void {
+   
+  }
+
+addone(){
+  this.pruduSer.addNew()
+}
 }

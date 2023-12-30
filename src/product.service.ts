@@ -136,7 +136,7 @@ export class ProductService {
   ];
   public addNew() {
     let customObj = this.newPruduct;
-    this.clothes.push({ title: customObj.title, id: customObj.id, imges: customObj.images, descrption: customObj.descrption, price: customObj.price })
+    this.clothes.push({ title: customObj.title, id: customObj.id, imges: customObj.images, descroption: customObj.descroption, price: customObj.price })
     console.log(this.clothes)
   }
   constructor() { }

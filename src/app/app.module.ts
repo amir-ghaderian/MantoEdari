@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { DetailComponent } from './detail/detail.component';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AdminComponent } from './admin/admin.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
