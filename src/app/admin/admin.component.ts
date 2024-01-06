@@ -13,10 +13,11 @@ initTE({ Input });
 })
 export class AdminComponent implements OnInit {
   newPrudct: any;
-  add:any;
+  arrayOfImages: Array<string>=[""]
+
   constructor(private pruduSer: ProductService) {
     this.newPrudct = pruduSer.newPruduct;
-  
+ 
   }
 
   ngOnInit(): void {
@@ -25,5 +26,9 @@ export class AdminComponent implements OnInit {
 
 addone(){
   this.pruduSer.addNew()
+}
+addImage(){
+ this.arrayOfImages.push(this.newPrudct.images)
+ console.log(this.arrayOfImages)
 }
 }

@@ -134,10 +134,17 @@ export class ProductService {
         "بسته شدن شلوار: زیپ و دکمه"]
     }
   ];
+  ngOnInit(): void {
+    this.clothes=this.clothes
+  }
   public addNew() {
     let customObj = this.newPruduct;
-    this.clothes.push({ title: customObj.title, id: customObj.id, imges: customObj.images, descroption: customObj.descroption, price: customObj.price })
+    this.clothes.push({ title: customObj.title, id: customObj.id, imges:this.addImages(), descroption: customObj.descroption, price: customObj.price })
     console.log(this.clothes)
+    console.log(customObj)
+  }
+  addImages(){
+  this.newPruduct.images
   }
   constructor() { }
 
