@@ -63,4 +63,16 @@
       <button (click)="addone()" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
        add
       </button>
+  
   </div>
+  <div class="flex justify-center bg-gray-200 mt-16">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="mb-3">
+          <label for="formFile" class="form-label">Upload file example</label>
+          <input (change)="this.onFilechange($event)" class="form-control" type="file" id="formFile">
+          <button (click)="this.upload()" type="button" class="btn btn-primary mt-3">Upload</button>
+        </div>
+      </div>
+    </div>
+   </div>

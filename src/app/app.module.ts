@@ -9,7 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { DetailComponent } from './detail/detail.component';
 import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule, // this is required for the actual http request
   ],
   providers: [],
   bootstrap: [AppComponent]
