@@ -13,7 +13,7 @@ initTE({ Input });
 })
 export class AdminComponent implements OnInit {
   newPrudct: any;
-  arrayOfImages: Array<string>=[""]
+  arrayOfImages: Array<string>=[]
 
   constructor(private pruduSer: ProductService) {
     this.newPrudct = pruduSer.newPruduct;
@@ -29,6 +29,7 @@ addone(){
 }
 addImage(){
  this.arrayOfImages.push(this.newPrudct.images)
+ this.newPrudct.imges=''
  console.log(this.arrayOfImages)
 }
 }
