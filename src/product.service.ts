@@ -46,7 +46,7 @@ export class ProductService {
         "بسته شدن : کمربند"]
     },
     {
-      title: "کفتان کرپ", id: 5, images: ["assets/25.jpg"], banner: "assets/11.jpg", price: 6999000, descroption: ["جنس پارچه: کرپ ",
+      title: "کفتان کرپ", id: 5, images: ["assets/25.jpg"], banner: "assets/11.jpg", price: 699000, descroption: ["جنس پارچه: کرپ ",
         "مدل یقه: ستاره ای",
         "جلو بسته",
         "برش عصایی"
@@ -54,7 +54,7 @@ export class ProductService {
         "بسته شدن :جلو بسته "]
     },
     {
-      title: "کت مازراتی مجلسی ", id: 6, images: ["assets/27.jpg","assets/29.jpg"], banner: "assets/11.jpg", price: 8999000, descroption: ["جنس پارچه: کرپ مازراتی",
+      title: "کت مازراتی مجلسی ", id: 6, images: ["assets/27.jpg","assets/29.jpg"], banner: "assets/11.jpg", price: 899000, descroption: ["جنس پارچه: کرپ مازراتی",
         "مدل یقه:  انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
@@ -62,7 +62,7 @@ export class ProductService {
         "بسته شدن:   دکمه"]
     },
     {
-      title: " کپ نوار طلایی", id: 7, images: ["assets/28.jpg","assets/30.jpg"], banner: "assets/11.jpg", price: 6999000, descroption: ["جنس پارچه: کرپ حریر",
+      title: " کپ نوار طلایی", id: 7, images: ["assets/28.jpg","assets/30.jpg"], banner: "assets/11.jpg", price: 699000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: ستاره ای",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"
@@ -70,14 +70,14 @@ export class ProductService {
         "بسته شدن شلوار: زیپ و دکمه"]
     },
     {
-      title: " سوزن دوزی هندی", id: 8, images: ["assets/24.jpg"], banner: "assets/24.jpg", price: 8999000, descroption: ["جنس پارچه: کرپ بابوس",
+      title: " سوزن دوزی هندی", id: 8, images: ["assets/24.jpg"], banner: "assets/24.jpg", price: 899000, descroption: ["جنس پارچه: کرپ بابوس",
         "مدل یقه:  گرد",
         "برش عصایی"
         , "102:قد کت",
         "بسته شدن: باز"]
     },
     {
-      title: "مانتوفیونا", id: 100, images: ["assets/1.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg"], banner: "assets/11.jpg", price: 3999000, descroption: ["جنس پارچه: کرپ فاستونی",
+      title: "مانتوفیونا", id: 100, images: ["assets/1.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg"], banner: "assets/11.jpg", price: 3990000, descroption: ["جنس پارچه: کرپ فاستونی",
         "مدل یقه: ستاره ای",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"

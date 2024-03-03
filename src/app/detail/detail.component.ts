@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/product.service';
+import { ShoppingService,Item } from '../shopping.service';
 
 @Component({
   selector: 'app-detail',
@@ -12,9 +13,16 @@ export class DetailComponent implements OnInit {
   id: any;
   select: any;
   selectedImage: any;
-  currentIndex:any;
-  i=0;
-  constructor(private route: ActivatedRoute, private psv: ProductService) { }
+  currentIndex: any;
+  i = 0;
+  cart: any;
+  totalPriceItem: any;
+  quntity: number = 1
+  selectedImg: any;
+
+  constructor(private route: ActivatedRoute, private psv: ProductService, public cardService: ShoppingService) {
+    this.cart = cardService.cart;
+  }
 
   ngOnInit(): void {
     const stringId = this.route.snapshot.paramMap.get('id');
@@ -26,7 +34,7 @@ export class DetailComponent implements OnInit {
       this.psv.clothes.forEach((element: any) => {
         if (element.id === this.id) {
           this.select = element;
-          this.selectedImage=this.select.images[0]
+          this.selectedImage = this.select.images[0]
 
 
         }
@@ -45,4 +53,12 @@ export class DetailComponent implements OnInit {
 
   }
 
+  addShoppingCart(){
+    this.totalPriceItem = this.quntity * this.select.price;
+    let customObj = new Item(this.select._size, this.select.id, this.select.title, this.selectedImg, this.select.price, this.quntity, this.totalPriceItem)
+
+    this.cardService.addToCart(customObj);
+
+
+  }
 }

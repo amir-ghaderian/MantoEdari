@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 
     HeaderComponent,
     DetailComponent,
-    AdminComponent
+    AdminComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
