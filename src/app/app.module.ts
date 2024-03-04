@@ -12,25 +12,27 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
+import { ModalModule } from "./_modal/modal.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainComponent,
-    HeaderComponent,
-    DetailComponent,
-    AdminComponent,
-    CartComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule, // this is required for the actual http request
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MainComponent,
+        HeaderComponent,
+        DetailComponent,
+        AdminComponent,
+        CartComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        RouterModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        ModalModule
+    ]
 })
 export class AppModule { }

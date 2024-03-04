@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingService } from '../shopping.service';
+import { ModalService } from '../_modal';
 
 @Component({
   selector: 'app-cart',
@@ -14,15 +15,15 @@ export class CartComponent implements OnInit {
   index: any;
   default: number = 1;
   totalPricesItems: any;
-
-  constructor(scsc: ShoppingService) {
+  modal: any;
+  constructor(scsc: ShoppingService, modalService: ModalService) {
     this.cart = scsc.cart;
-
+    this.modal = modalService;
 
   }
 
   ngOnInit(): void {
-console.log(this.cart)
+    console.log(this.cart)
     /// this.totalPricesItems = this.cart.map((a: { totalPrice: number; }) => a.totalPrice);
 
 
@@ -52,7 +53,7 @@ console.log(this.cart)
   }
 
   calculationSum() {
-  
+
     this.sum = 0
     for (var i = 0; i < this.cart.length; i++) {
       this.sum += this.cart[i].totalPrice;
@@ -60,5 +61,12 @@ console.log(this.cart)
     this.totalPricesItems = []
     return this.sum;
   }
+  openModal(id: string) {
+    this.modal.open(id);
 
+  }
+  closeModal(id: string) {
+    this.modal.close(id);
+
+  }
 }
