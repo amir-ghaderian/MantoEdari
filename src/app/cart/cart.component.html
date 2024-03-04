@@ -2,15 +2,15 @@
     <div class="lg: shadow-md my-10 md:px-0 flex flex-col items-center">
       <div class="w-3/4 bg-white lg:px-10 py-10 md:px-0">
         <div class="flex justify-between border-b pb-8">
-          <h1 class="font-semibold text-2xl">Shopping Cart</h1>
-          <h2 class="font-semibold text-2xl">{{cart.length}} Items</h2>
+          <h1 class="font-semibold text-2xl">سبد خرید شما</h1>
+          <h2 class="font-semibold text-2xl">{{cart.length}} اقلام</h2>
         </div>
 
 
         <div class="flex mt-10 mb-5">
-          <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
-          <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
-          <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
+          <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">مشخصات محصول</h3>
+          <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">تعداد</h3>
+          <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">قیمت</h3>
         </div>
         <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5" *ngFor="let cloth of cart let i=index">
           <div class="flex w-2/5"> <!-- product -->
@@ -22,7 +22,7 @@
               <span class="text-red-500 text-xs">size:{{cloth.size}}</span>
               <span class="font-bold text-sm">{{cloth.color}}</span>
 
-              <span (click)="remove(cloth)" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</span>
+              <span (click)="remove(cloth)" class="font-semibold hover:text-red-500 text-gray-500 text-xs">قیمت</span>
             </div>
           </div>
           <div class="flex justify-center w-1/5">
@@ -44,33 +44,33 @@
         <a href="#" class="flex font-semibold text-indigo-600 text-sm mt-10">
       
           <svg class="fill-current mr-2 text-indigo-600 w-4" viewBox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"/></svg>
-          Continue Shopping
+          بازگشت و ادامه خرید
         </a>
       </div>
 
       <div id="summary" class="w-2/6 lg:px-8 py-10 md:px-0" >
-        <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
+        <h1 class="font-semibold text-2xl border-b pb-8">صورتحساب شما</h1>
         <div class="flex justify-between mt-10 mb-5">
-          <span class="font-semibold text-sm uppercase">Items {{cart.length}}</span>
+          <span class="font-semibold text-sm uppercase">تعداد سفارشات {{cart.length}}</span>
           <span class="font-semibold text-sm"></span>
         </div>
         <div>
-          <label class="font-medium inline-block mb-3 text-sm uppercase">Shipping</label>
+          <label class="font-medium inline-block mb-3 text-sm uppercase">مجموعاً</label>
          
             <span class="ml-8">{{sum}}</span>
         
         </div>
         <div class="py-10">
-          <label for="promo" class="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
+          <label for="promo" class="font-semibold inline-block mb-3 text-sm uppercase">کد تخفیف</label>
           <input type="text" id="promo" placeholder="Enter your code" class="p-2 text-sm w-full">
         </div>
-        <button (click)="calculationSum()" class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
+        <button (click)="calculationSum()" class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">تایید</button>
         <div class="border-t mt-8">
           <div class="flex font-semibold justify-between py-6 text-sm uppercase">
-            <span>Total cost</span>
+            <span>هزینه نهایی</span>
             <span>{{sum}}</span>
           </div>
-          <button (click)="openModal('custom-modal-1')" class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
+          <button (click)="openModal('custom-modal-1')" class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">مبلغ نهایی</button>
           <jw-modal id="custom-modal-1">لطفاً مبلغ فوق را به شماره کارت [5041721204872825]به نام مهرشاد بقال محسنی واریز کرده و فیش بانکی را برای شماره09125608503ارسال نمایید </jw-modal>
         </div>
       </div>
