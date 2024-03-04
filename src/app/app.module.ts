@@ -17,7 +17,6 @@ import { CartComponent } from './cart/cart.component';
   declarations: [
     AppComponent,
     MainComponent,
-
     HeaderComponent,
     DetailComponent,
     AdminComponent,

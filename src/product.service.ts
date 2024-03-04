@@ -26,19 +26,19 @@ export class ProductService {
         "مدل یقه: انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
-        , "102:قد کت", 
+        , "70:قد کت", 
         "بسته شدن :  دکمه"]
     },
     {
-      title: "مانتو کتی مازراتی", id: 3, images: ["assets/1.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg"], banner: "assets/11.jpg", price: 6999000, descroption: ["جنس پارچه: کرپ مازراتی",
+      title: "مانتو کتی مازراتی", id: 3, images: ["assets/41.jpg"], banner: "assets/11.jpg", price: 599000, descroption: ["جنس پارچه: کرپ مازراتی",
         "مدل یقه: انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
-        , "102:قد کت",
+        , "70:قد کت",
         "بسته شدن :   دکمه"]
     },
     {
-      title: "مانتوهندی", id: 4, images: ["assets/23.jpg"], banner: "assets/23.jpg", price: 8999000, descroption: ["جنس پارچه: کرپ بابوس",
+      title: "مانتوهندی", id: 4, images: ["assets/23.jpg"], banner: "assets/23.jpg", price: 899000, descroption: ["جنس پارچه: کرپ بابوس",
         "مدل یقه: گرد",
         "جلوباز ",
         "برش عصایی "
@@ -66,7 +66,7 @@ export class ProductService {
         "مدل یقه: ستاره ای",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"
-        , "102:قد کت", "102:قد شلوار ",
+        , "102:قد کت",
         "بسته شدن شلوار: زیپ و دکمه"]
     },
     {
@@ -77,12 +77,44 @@ export class ProductService {
         "بسته شدن: باز"]
     },
     {
-      title: "مانتوفیونا", id: 100, images: ["assets/1.jpg", "assets/8.jpg", "assets/9.jpg", "assets/10.jpg"], banner: "assets/11.jpg", price: 3990000, descroption: ["جنس پارچه: کرپ فاستونی",
-        "مدل یقه: ستاره ای",
+      title: " لنین هندی", id: 9, images: ["assets/36.jpg"], banner: "assets/11.jpg", price: 948000, descroption: ["جنس پارچه:  لنین",
+        "مدل یقه: گرد ",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"
-        , "102:قد کت", "102:قد شلوار ",
-        "بسته شدن شلوار: زیپ و دکمه"]
+        , "70:قد کت",
+        "بسته شدن : جلوباز  "]
+    },
+    {
+      title: "لنین کراش", id: 10, images: ["assets/37.jpg"], banner: "assets/10.jpg", price: 699000, descroption: ["جنس پارچه: کرپ کراش",
+        "مدل یقه:  گرد",
+        "آستین کیمونو ",
+        "برش عصایی  "
+        , "70:قد کت", 
+        "بسته شدن :  جلوباز "]
+    },
+    {
+      title: " عبایی کنفی", id: 11, images: ["assets/38.jpg"], banner: "assets/10.jpg", price: 699000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه:  گرد",
+        "آستین کیمونو ",
+        "برش عصایی  "
+        , "132:قد کت", 
+        "بسته شدن : غزن جلوباز "]
+    },
+    {
+      title: " لنین سوزن دوزی ", id: 12, images: ["assets/39.jpg"], banner: "assets/10.jpg", price: 949000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه:  گرد",
+        "حلقه آستین کتی  ",
+        "برش عصایی  "
+        , "102:قد کت", 
+        "بسته شدن :  جلوباز "]
+    },
+    {
+      title: "   لنین ژاکارد جناقی ", id: 13, images: ["assets/40.jpg"], banner: "assets/10.jpg", price: 949000, descroption: ["جنس پارچه: ژاکارد ",
+        "مدل یقه:  گرد",
+        "حلقه آستین کتی  ",
+        "برش عصایی  "
+        , "102:قد کت", 
+        "بسته شدن :  جلوباز "]
     },
     {
       title: "مانتوفیونا", id: 101, images: ["assets/2.jpg", "assets/14.jpg", "assets/15.jpg", "assets/18.jpg"], banner: "assets/10.jpg", price: 2999000, descroption: ["جنس پارچه: کرپ فاستونی",
