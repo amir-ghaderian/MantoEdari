@@ -1,7 +1,7 @@
 <div class="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4">
     <div class="xl:w-2/6 lg:w-2/5 w-80 md:block hidden">
         <img class="w-full h-[38em]" alt="image of a girl posing" src="{{selectedImage}}" />
-       <div class="flex w-full justify-center  h-48"><img *ngFor="let pic of select.images let i=index " class="w-20 h-28"  src="{{select.images[i]}}"  [ngClass]="{'bgbtn':i=== currentIndex}" (click)="showImg(i)"    class="mt-6 m-1 w-full" alt="image of a girl posing" src="{{pic}}" /></div> 
+       <div class="flex w-full justify-center  h-48"><img *ngFor="let pic of select.images let i=index " class="w-20 h-28"  src="{{select.images[i]}}"  [ngClass]="{'bgbtn':i=== currentIndex}" (click)="showImg(i)"    class="mt-6 m-1 " alt="image of a girl posing" src="{{pic}}" /></div> 
     </div>
     <div class="md:hidden">
         <img class="w-full h-[30em] " alt="image of a girl posing" src="{{selectedImage}}" />
@@ -44,6 +44,7 @@
         </button>
         <div>
             <p class="text-base leading-4 mt-7 text-gray-600 text-right" *ngFor="let des of select.descroption">{{des}}</p>
+            <p class="text-base leading-4 mt-7 text-gray-600 text-right" >{{priceProduct}}:قیمت</p>
   
         </div>
         <div>

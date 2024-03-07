@@ -14,6 +14,22 @@ export class ProductService {
   }
   public clothes: any = [
     {
+      title: " گیپوردار مجلسی ", id: 43, images: ["assets/43.jpg"], banner: "assets/11.jpg", price: 699000, descroption: ["جنس پارچه: کرپ حریر",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار میدی",
+        "بسته شدن : قزن"]
+    },
+    {
+      title: " کت کریستال ", id: 42, images: ["assets/42.jpg"], banner: "assets/11.jpg", price: 699000, descroption: ["جنس پارچه: بابوس ترکیبی با کتان کریستال",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار ۹۰",
+        "بسته شدن : قزن"]
+    },
+    {
       title: " نواردوزی ", id: 1, images: ["assets/31.jpg"], banner: "assets/11.jpg", price: 699000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: بدون یقه",
         "جلو باز",

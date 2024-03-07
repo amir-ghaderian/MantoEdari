@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/product.service';
-import { ShoppingService,Item } from '../shopping.service';
+import { ShoppingService, Item } from '../shopping.service';
 
 @Component({
   selector: 'app-detail',
@@ -19,7 +19,7 @@ export class DetailComponent implements OnInit {
   totalPriceItem: any;
   quntity: number = 1
   selectedImg: any;
-
+  priceProduct: number = 0;
   constructor(private route: ActivatedRoute, private psv: ProductService, public cardService: ShoppingService) {
     this.cart = cardService.cart;
   }
@@ -35,7 +35,7 @@ export class DetailComponent implements OnInit {
         if (element.id === this.id) {
           this.select = element;
           this.selectedImage = this.select.images[0]
-
+          this.priceProduct = this.select.price;
 
         }
       });
@@ -53,7 +53,7 @@ export class DetailComponent implements OnInit {
 
   }
 
-  addShoppingCart(){
+  addShoppingCart() {
     this.totalPriceItem = this.quntity * this.select.price;
     let customObj = new Item(this.select._size, this.select.id, this.select.title, this.selectedImg, this.select.price, this.quntity, this.totalPriceItem)
 
