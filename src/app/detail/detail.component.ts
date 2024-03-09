@@ -20,6 +20,7 @@ export class DetailComponent implements OnInit {
   quntity: number = 1
   selectedImg: any;
   priceProduct: number = 0;
+  show: boolean = false;
   constructor(private route: ActivatedRoute, private psv: ProductService, public cardService: ShoppingService) {
     this.cart = cardService.cart;
   }
@@ -54,11 +55,15 @@ export class DetailComponent implements OnInit {
   }
 
   addShoppingCart() {
+    this.show = true;
     this.totalPriceItem = this.quntity * this.select.price;
     let customObj = new Item(this.select._size, this.select.id, this.select.title, this.selectedImg, this.select.price, this.quntity, this.totalPriceItem)
 
     this.cardService.addToCart(customObj);
 
 
+  }
+  close() {
+    this.show = false;
   }
 }

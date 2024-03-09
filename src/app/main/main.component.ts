@@ -9,6 +9,7 @@ import {Carousel,initTE,} from "tw-elements";
 })
 export class MainComponent implements OnInit {
   items: any;
+  isToggle: any;
   constructor(public ps: ProductService) {
     this.items = ps.clothes;
   }
