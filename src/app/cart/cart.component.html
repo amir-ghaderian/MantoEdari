@@ -71,7 +71,11 @@
             <span>{{sum}}</span>
           </div>
           <button (click)="openModal('custom-modal-1')" class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">مبلغ نهایی</button>
-          <jw-modal id="custom-modal-1">لطفاً مبلغ فوق را به شماره کارت [5041721204872825]به نام مهرشاد بقال محسنی واریز کرده و فیش بانکی را برای شماره09125608503ارسال نمایید </jw-modal>
+          <jw-modal id="custom-modal-1">
+            <span> {{sum}} مبلغ نهایی</span>
+            <br>
+            <span>لطفاً مبلغ فوق را به شماره کارت [5041721204872825]به نام مهرشاد بقال محسنی واریز کرده و فیش بانکی را برای شماره09125608503ارسال نمایید</span>
+             </jw-modal>
         </div>
       </div>
 
