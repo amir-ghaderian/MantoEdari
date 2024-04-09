@@ -136,7 +136,7 @@ export class ProductService {
         "برش عصایی  "
         , "102:قد کت",
         "بسته شدن :  جلوباز "]
-      , tagId: [5]
+      , tagId: [5,2,1]
     },
     {
       title: "   لنین ژاکارد جناقی ", id: 13, images: ["assets/40.jpg"], banner: "assets/10.jpg", price: 949000, descroption: ["جنس پارچه: ژاکارد ",
@@ -145,7 +145,7 @@ export class ProductService {
         "برش عصایی  "
         , "102:قد کت",
         "بسته شدن :  جلوباز "]
-      , tagId: [1]
+      , tagId: [1,0]
     },
     {
       title: "مانتوفیونا", id: 101, images: ["assets/2.jpg", "assets/14.jpg", "assets/15.jpg", "assets/18.jpg"], banner: "assets/10.jpg", price: 2999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -163,7 +163,7 @@ export class ProductService {
         "برش عصایی2 عدد جیب"
         , "102:قد کت", "102:قد شلوار ",
         "بسته شدن شلوار: زیپ و دکمه"]
-      , tagId: [6]
+      , tagId: [6,4,0]
     },
     {
       title: "مانتوفیونا", id: 103, images: ["assets/4.jpg", "assets/13.jpg", "assets/11.jpg", "assets/20.jpg"], banner: "assets/8.jpg", price: 7999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -172,7 +172,7 @@ export class ProductService {
         "برش عصایی2 عدد جیب"
         , "102:قد کت", "102:قد شلوار ",
         "بسته شدن شلوار: زیپ و دکمه"]
-      , tagId: [1]
+      , tagId: [1,3]
     },
     {
       title: "مانتوفیونا", id: 104, images: ["assets/4.jpg", "assets/3.jpg", "assets/2.jpg", "assets/20.jpg"], banner: "assets/7.jpg", price: 6999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -181,7 +181,7 @@ export class ProductService {
         "برش عصایی2 عدد جیب"
         , "102:قد کت", "102:قد شلوار ",
         "بسته شدن شلوار: زیپ و دکمه"]
-      , tagId: [3]
+      , tagId: [3,0]
     },
     {
       title: "مانتوفیونا", id: 105, images: ["assets/6.jpg", "assets/21.jpg", "assets/1.jpg", "assets/20.jpg"], banner: "assets/2.jpg", price: 5999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -208,7 +208,7 @@ export class ProductService {
         "برش عصایی2 عدد جیب"
         , "102:قد کت", "102:قد شلوار ",
         "بسته شدن شلوار: زیپ و دکمه"]
-      , tagId: [2]
+      , tagId: [2,0]
     },
     {
       title: "مانتوفیونا", id: 108, images: ["assets/9.jpg", "assets/12.jpg", "assets/14.jpg", "assets/16.jpg"], banner: "assets/5.jpg", price: 2999000, descroption: ["جنس پارچه: کرپ فاستونی",
@@ -217,7 +217,7 @@ export class ProductService {
         "برش عصایی2 عدد جیب"
         , "102:قد کت", "102:قد شلوار ",
         "بسته شدن شلوار: زیپ و دکمه"]
-      , tagId: [3]
+      , tagId: [0]
     },
     {
       title: "مانتوفیونا", id: 109, images: ["assets/1.jpg", "assets/10.jpg", "assets/2.jpg", "assets/5.jpg"], banner: "assets/1.jpg", price: 1999000, descroption: ["جنس پارچه: کرپ فاستونی",

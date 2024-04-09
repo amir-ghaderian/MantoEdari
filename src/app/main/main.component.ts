@@ -26,7 +26,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.renderList()
+ 
     initTE({ Carousel });
 
     
@@ -76,5 +76,9 @@ export class MainComponent implements OnInit {
       this.currentImge.push(this.filterList[i].images[0].url)
       this.currentIndex.push(0)
     }
+  }
+  clearFilter(){
+    this.filterList=this.items;
+    this.selectedTags=[]
   }
 }
