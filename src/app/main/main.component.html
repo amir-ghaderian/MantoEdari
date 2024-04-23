@@ -103,13 +103,13 @@
 
 
 <div class="relative max-md:hidden" dir="rtl">
-  <div class="flex w-56 items-center h-8 pl-3 pr-2 border border-black focus:outline-none" id="parent">
+  <div class="flex w-56 items-center h-8 pl-3 pr-2 bg-teal-100 rounded-lg focus:outline-none" id="parent">
 
     دنبال چی هستید انتخاب کنید
 
-    <div class="absolute flex flex-col w-40 mt-1 border border-black shadow-lg right-[-10em]	" id="child">
-      <a *ngFor="let tag of tags" class="flex items-center h-8 px-3 text-sm hover:bg-gray-200"
-        (click)="setFilter(tag.id)" [ngClass]="{'bg-red-300':selectedTags.lastIndexOf(tag.id) >= 0}">{{tag.title}}</a>
+    <div class="absolute flex flex-col w-40 mt-1  bg-white shadow-lg right-[-10em]	bottom-[-15em]" id="child">
+      <div *ngFor="let tag of tags" class="flex items-center h-8 px-3 rounded-xl text-sm hover:bg-teal-200 move-left"
+        (click)="setFilter(tag.id)" [ngClass]="{'bg-red-300':selectedTags.lastIndexOf(tag.id) >= 0}">{{tag.title}}</div>
       <button (click)="clearFilter()" class="bg-blue-300 rounded-lg">clear</button>
     </div>
   </div>
