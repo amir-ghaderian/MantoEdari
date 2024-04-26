@@ -102,12 +102,12 @@
 </div>
 
 
-<div class="relative max-md:hidden" dir="rtl">
-  <div class="flex w-56 items-center h-8 pl-3 pr-2 bg-teal-100 rounded-lg focus:outline-none" id="parent">
+<div class="felx max-md:hidden" dir="rtl">
+  <div class=" w-56 items-center h-8 pl-3 pr-2 bg-teal-100 rounded-lg focus:outline-none" id="parent">
 
     دنبال چی هستید انتخاب کنید
 
-    <div class="absolute flex flex-col w-40 mt-1  bg-white shadow-lg right-[-10em]	bottom-[-15em]" id="child">
+    <div class="invisible flex flex-col w-40 mt-1  bg-white shadow-lg " id="child">
       <div *ngFor="let tag of tags" class="flex items-center h-8 px-3 rounded-xl text-sm hover:bg-teal-200 move-left"
         (click)="setFilter(tag.id)" [ngClass]="{'bg-red-300':selectedTags.lastIndexOf(tag.id) >= 0}">{{tag.title}}</div>
       <button (click)="clearFilter()" class="bg-blue-300 rounded-lg">clear</button>

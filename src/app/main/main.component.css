@@ -6,13 +6,12 @@ form {
 
 select {
   width: 300px;
+ 
 }
 
 #parent:hover #child {
+  visibility: visible;
 
-  animation: myship 2s ;
-
-  animation-fill-mode: forwards;
 }
 .move-left:hover{
 
@@ -20,12 +19,3 @@ select {
   transform : translateX(-10px);
 }
 
-@keyframes myship {
-  from {
-    right: -10em;
-  }
-
-  to {
-    right: 0;
-  }
-}
