@@ -27,11 +27,7 @@
       </span>
     </button>
 
-    <div class="ml-2 md:mr-2">
-      <a  [routerLink]="['/']" class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
-        >MANTOO MEHRSHAD</a
-      >
-    </div>
+    
 
     <!-- Collapsible navbar container -->
     <div
@@ -39,51 +35,6 @@
       id="navbarSupportedContent15"
       data-te-collapse-item>
       <!-- Left links -->
-      <ul
-        class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row"
-        data-te-navbar-nav-ref>
-        <!-- Home link -->
-        <li
-          class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
-          data-te-nav-item-ref>
-          <a
-            class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            aria-current="page"
-            href="#"
-            data-te-nav-link-ref
-            >Home</a
-          >
-        </li>
-        <!-- Link -->
-        <li
-          class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-          data-te-nav-item-ref>
-          <a
-            class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
-            data-te-nav-link-ref
-            >season</a
-          >
-        </li>
-        <!-- Disabled link -->
-        <li
-          class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
-          data-te-nav-link-ref>
-          <a
-            class="text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            >category</a
-          >
-        </li>
-        <li>
-          <a routerLink='/cart' class="pl-3 inline-block no-underline hover:text-black" href="#">
-            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" />
-                <circle cx="10.5" cy="18.5" r="1.5" />
-                <circle cx="17.5" cy="18.5" r="1.5" />
-            </svg>
-        </a>
-        </li>
-      </ul>
       <div class="w-[300px] lg:pr-2">
         <div class="relative flex w-full flex-wrap items-stretch">
           <input
@@ -103,6 +54,58 @@
           </button>
         </div>
       </div>
+      <ul
+        class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row-reverse w-full justify-start	"
+        data-te-navbar-nav-ref>
+        <!-- Home link -->
+        <li class="ml-2 md:mr-2">
+          <a  [routerLink]="['/']" class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
+            >مانتو سرمه</a
+          >
+        </li>
+        <li
+          class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
+          data-te-nav-item-ref>
+          <a
+            class="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            aria-current="page"
+            href="#"
+            data-te-nav-link-ref
+            >صفحه اصلی</a
+          >
+        </li>
+        <!-- Link -->
+        <li
+          class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+          data-te-nav-item-ref>
+          <a
+            class="p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#"
+            data-te-nav-link-ref
+            >مناسب فصل</a
+          >
+        </li>
+        <!-- Disabled link -->
+        <li
+          class="mb-4 pl-2 lg:mb-0 lg:pl-0 lg:pr-1"
+          data-te-nav-link-ref>
+          <a
+            class="text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            >مدل ها</a
+          >
+        </li>
+        <li>
+          <a routerLink='/cart' class="pl-3 inline-block no-underline hover:text-black" href="#">
+            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M21,7H7.462L5.91,3.586C5.748,3.229,5.392,3,5,3H2v2h2.356L9.09,15.414C9.252,15.771,9.608,16,10,16h8 c0.4,0,0.762-0.238,0.919-0.606l3-7c0.133-0.309,0.101-0.663-0.084-0.944C21.649,7.169,21.336,7,21,7z M17.341,14h-6.697L8.371,9 h11.112L17.341,14z" />
+                <circle cx="10.5" cy="18.5" r="1.5" />
+                <circle cx="17.5" cy="18.5" r="1.5" />
+            </svg>
+        </a>
+        </li>
+       
+      </ul>
+   
     </div>
   </div>
 </nav>
