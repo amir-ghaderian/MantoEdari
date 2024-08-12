@@ -14,6 +14,123 @@ export class ProductService {
   }
   public clothes: any = [
     {
+      title: "کفتان رخ   ", id: 56, images: ["assets/544.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه: بدون یقه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار بلند",
+        "بسته شدن : بسته"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومبز رنگی اسمارتیزی  ", id: 55, images: ["assets/538.JPG","assets/534.JPG"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:   یقه مردانه ",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار شومیز",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: " لنین دکمه پرچی برشکا   ", id: 54, images: ["assets/531.JPG","assets/533.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه: بدون یقه",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار کتی",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: " لین جلوبسته پایین ریش", id: 53, images: ["assets/526.JPG","assets/540.JPG","assets/527.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار کتی",
+        "بسته شدن : باز"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "سارافون و کت گلدوزی ", id: 52, images: ["assets/525.JPG","assets/553.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار کتی",
+        "بسته شدن : باز"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "لنین کتی", id: 51, images: ["assets/523.JPG","assets/528.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار کتی",
+        "بسته شدن : باز"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "کفتان لنین کمر پهن", id: 50, images: ["assets/522.JPG","assets/547.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه: بدون یقه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار بلند",
+        "بسته شدن : باز"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "کفتان تیکه دوزی ", id: 49, images: ["assets/520.JPG","assets/521.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه: بدون یقه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار بلند",
+        "بسته شدن : باز"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "میز رنگی اسمارتیزی  ", id: 48, images: ["assets/514.JPG","assets/532.JPG"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:   یقه مردانه ",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار شومیز",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "نخی آستین گیپور   ", id: 47, images: ["assets/56.JPG"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:  بدون یقه ",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار شومیز",
+        "بسته شدن : بندی"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومیز ماهی  ", id: 46, images: ["assets/55.jpg"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
+        " مدل یقه:  مردانه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار شومیز",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "کفتان مغزی دار", id: 45, images: ["assets/53.JPG","assets/546.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
+        "مدل یقه: بدون یقه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار بلند",
+        "بسته شدن : بسته"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "لنین خرج کار هندی", id: 44, images: ["assets/52.jpg","assets/516.JPG","assets/548.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: لنین ",
+        "مدل یقه: بدون یقه",
+        "جلو باز",
+        "برش عصایی"
+        , "قد کار کتی",
+        "بسته شدن : بسته"]
+      , tagId: [1, 4, 6]
+    },
+    {
       title: " گیپوردار مجلسی ", id: 43, images: ["assets/43.jpg"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: بدون یقه",
         "جلو باز",
