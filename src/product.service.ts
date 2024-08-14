@@ -23,7 +23,7 @@ export class ProductService {
       , tagId: [1, 4, 6]
     },
     {
-      title: "شومبز رنگی اسمارتیزی  ", id: 55, images: ["assets/538.JPG","assets/534.JPG"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
+      title: "شومبز رنگی گیس بافت  ", id: 55, images: ["assets/538.JPG","assets/534.JPG"], banner: "assets/11.jpg", price:448000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:   یقه مردانه ",
         "جلو دکمه",
         "برش عصایی"

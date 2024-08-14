@@ -57,7 +57,7 @@ export class DetailComponent implements OnInit {
   addShoppingCart() {
     this.show = true;
     this.totalPriceItem = this.quntity * this.select.price;
-    let customObj = new Item(this.select._size, this.select.id, this.select.title, this.selectedImg, this.select.price, this.quntity, this.totalPriceItem)
+    let customObj = new Item(this.select._size, this.select.id, this.select.title, this.select.images[0], this.select.price, this.quntity, this.totalPriceItem)
 
     this.cardService.addToCart(customObj);
 
