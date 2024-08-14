@@ -23,8 +23,8 @@ export class CartComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.cart)
-    /// this.totalPricesItems = this.cart.map((a: { totalPrice: number; }) => a.totalPrice);
+   
+
 
 
   }
@@ -68,5 +68,12 @@ export class CartComponent implements OnInit {
   closeModal(id: string) {
     this.modal.close(id);
 
+  }
+  getAllqunti() {
+    var result = 0;
+    for (var i = 0; i < this.cart.length; i++) {
+      result += this.cart[i].quntitiy;
+    }
+    return result;
   }
 }

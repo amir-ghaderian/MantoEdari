@@ -6,13 +6,13 @@ import { Injectable } from '@angular/core';
 export class ShoppingService {
   public cart: Array<Item> = []
 
-img:any
+
   public addToCart(item: Item) {
   let exist = false;
   for (let index = 0; index < this.cart.length; index++) {
 
     const element = this.cart[index];
-    this.img=this.cart[0].images;
+    
     if (element.id === item.id) {
       exist = true;
       if (element.size === item.size) {
@@ -28,9 +28,7 @@ img:any
   }
 
 }
-returnImages(){
 
-}
 }
 export class Item {
   size: string;
