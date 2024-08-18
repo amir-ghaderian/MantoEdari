@@ -14,6 +14,69 @@ export class ProductService {
   }
   public clothes: any = [
     {
+      title: " یقه گرد دو جیب راه راه   ", id: 63, images: ["assets/562.jpeg"], banner: "assets/11.jpg", price:298000, descroption: ["جنس پارچه:  نخی",
+        " گرد مدل یقه:    یقه ",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار 120",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومیز یقه گرد دو جیب راه راه   ", id: 62, images: ["assets/560.jpeg","assets/561.jpeg"], banner: "assets/11.jpg", price:298000, descroption: ["جنس پارچه:  نخی",
+        " گرد مدل یقه:    یقه ",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار 80",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "کت مازراتی مجلسی ", id: 61, images: ["assets/557.jpeg", "assets/558.jpeg","assets/559.jpeg"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه: کرپ مازراتی",
+        "مدل یقه:  انگلیسی",
+        "جلو لایی کشی شده",
+        "برش عصایی2 عدد جیب"
+        , "75:قد کت",
+        "بسته شدن:   دکمه"]
+      , tagId: [5]
+    },
+    {
+      title: "شومیز جلو بسته ماری    ", id: 60, images: ["assets/556.jpeg"], banner: "assets/11.jpg", price:398000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:    یقه مردانه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار 80",
+        "بسته شدن : بسته"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومیز نواردوزی    ", id: 59, images: ["assets/555.jpeg"], banner: "assets/11.jpg", price:398000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:    یقه مردانه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار 80",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومیز گیس بافت   ", id: 58, images: ["assets/554.jpeg"], banner: "assets/11.jpg", price:398000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:    یقه مردانه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار 80",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
+      title: "شومیز ماری  ", id: 57, images: ["assets/551.jpeg","assets/552.jpeg"], banner: "assets/11.jpg", price:398000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه:    یقه مردانه",
+        "جلو بسته",
+        "برش عصایی"
+        , "قد کار 80",
+        "بسته شدن : دکمه"]
+      , tagId: [1, 4, 6]
+    },
+    {
       title: "کفتان رخ   ", id: 56, images: ["assets/544.JPG"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه: بدون یقه",
         "جلو بسته",
