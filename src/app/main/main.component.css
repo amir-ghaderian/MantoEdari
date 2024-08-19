@@ -19,3 +19,6 @@ select {
   transform : translateX(-10px);
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
