@@ -3,6 +3,11 @@
   class="relative flex w-full  flex-nowrap items-center justify-between py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
   data-te-navbar-ref>
   <div class="flex w-[100%] fixed top-0  h-16 z-10 bg-white  flex-wrap items-center justify-between  ">
+    <span class="ml-2 md:mr-2">
+      <a  [routerLink]="['/']" class="text-xl text-neutral-800 dark:text-neutral-200 font-extrabold" href="#"
+        >SORMEH</a
+      >
+    </span>
     <!-- Hamburger button for mobile view -->
     <button
       class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
@@ -58,11 +63,7 @@
         class="list-style-none mr-auto flex flex-col pl-0 lg:mt-1 lg:flex-row-reverse w-full justify-start	"
         data-te-navbar-nav-ref>
         <!-- Home link -->
-        <li class="ml-2 md:mr-2">
-          <a  [routerLink]="['/']" class="text-xl text-neutral-800 dark:text-neutral-200" href="#"
-            >مانتو سرمه</a
-          >
-        </li>
+       
         <li
           class="my-4 pl-2 lg:my-0 lg:pl-2 lg:pr-1"
           data-te-nav-item-ref>

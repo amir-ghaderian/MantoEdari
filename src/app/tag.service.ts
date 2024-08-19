@@ -5,13 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class TagService {
   tags: Array<Tag> = [
-    { id: 0, title: "بدون چروک" },
-    { id: 1, title: "جلوبسته" },
+    { id: 0, title: "مانتو کتی" },
+    { id: 1, title: "دو پی اس" },
     { id: 2, title: "ابایی" },
-    { id: 3, title: "زیپی" },
-    { id: 4, title: "بدون دکمه" },
-    { id: 5, title: " بدون رنگ دهی" },
-    { id: 6, title: " جیبدار" },
+    { id: 3, title: "مناسب محل کار" },
+    { id: 4, title: "اسپرت " },
+    { id: 5, title: " مجلسی  " },
+    { id: 6, title: " کت شلوار" },
+    { id: 7, title: " کفتان" },
+    { id: 8, title: " شومیز" },
   ];
   
 }
