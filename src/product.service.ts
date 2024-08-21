@@ -14,6 +14,15 @@ export class ProductService {
   }
   public clothes: any = [
     {
+      title: " مانتو کتی پارچه سرخپوستی  ", id: 64, images: ["assets/563.jpeg"], banner: "assets/11.jpg", price:498000, descroption: ["جنس پارچه:  نخی",
+        "  مدل یقه: یقه گرد  ",
+        "جلو دکمه",
+        "برش عصایی"
+        , "قد کار ۸۵",
+        "بسته شدن : باز"]
+      , tagId: [8,0]
+    },
+    {
       title: " یقه گرد دو جیب راه راه   ", id: 63, images: ["assets/562.jpeg"], banner: "assets/11.jpg", price:298000, descroption: ["جنس پارچه:  نخی",
         " گرد مدل یقه:    یقه ",
         "جلو دکمه",
