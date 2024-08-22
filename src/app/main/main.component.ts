@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/product.service';
 import { Carousel, initTE, } from "tw-elements";
 import { TagService } from '../tag.service';
+import { FeaturesService } from '../features.service';
 
 @Component({
   selector: 'app-main',
@@ -18,22 +19,32 @@ export class MainComponent implements OnInit {
   product: any;
   currentImge: string[] = [];
   currentIndex: number[] = [];
-  constructor(public ps: ProductService, tagServise: TagService) {
+  features: any;
+
+
+  constructor(public ps: ProductService, tagServise: TagService, public featuresService: FeaturesService) {
     this.items = ps.clothes;
-    this.filterList=this.items;
+    this.filterList = this.items;
     this.tags = tagServise.tags;
-    
+    this.features = featuresService;
+
+
   }
 
   ngOnInit(): void {
- 
+
     initTE({ Carousel });
 
-    
+
+
+  }
+
+  getTitle(i: number) {
+    return this.featuresService.getTagTitle(i)
   }
   setFilter(id: number) {
-   
-    
+
+
     if (this.selectedTags.indexOf(id) === -1) {
       this.selectedTags.push(id)
     } else {
@@ -77,8 +88,8 @@ export class MainComponent implements OnInit {
       this.currentIndex.push(0)
     }
   }
-  clearFilter(){
-    this.filterList=this.items;
-    this.selectedTags=[]
+  clearFilter() {
+    this.filterList = this.items;
+    this.selectedTags = []
   }
 }

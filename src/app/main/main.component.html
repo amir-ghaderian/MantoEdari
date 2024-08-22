@@ -146,9 +146,13 @@
       style="background-image: url({{item.images[0]}})"></div>
     <div class="flex flex-col justify-between p-4 w-48 leading-normal">
       <h5 class="mb-2 text-2xl font-bold text-right tracking-tight text-gray-900 dark:text-white">{{item.title}}</h5>
-      <p *ngFor="let des of item.descroption"
+   
+      <p *ngFor="let des of item.feauters ;let i =index"
+     
         class="odd:bg-white even:bg-slate-150 text-right font-normal text-gray-700 dark:text-gray-400 overflow-hidden ">
-        {{des}}</p>
+        {{getTitle(des)}}     
+      </p>
+      
       <p class=" text-right text-2xl">قیمت:{{item.price}}</p>
     </div>
   </a>
