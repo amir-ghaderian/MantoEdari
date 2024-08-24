@@ -14,19 +14,21 @@ export class MainComponent implements OnInit {
   isToggle: any;
   tags: any;
   selectedTags: Array<number> = [];
+  selectedTagsFeatures: Array<number> = [];
   filtered: number[] = []
   filterList: any;
   product: any;
   currentImge: string[] = [];
   currentIndex: number[] = [];
   features: any;
+ 
 
 
   constructor(public ps: ProductService, tagServise: TagService, public featuresService: FeaturesService) {
     this.items = ps.clothes;
     this.filterList = this.items;
     this.tags = tagServise.tags;
-    this.features = featuresService;
+    this.features = featuresService.features;
 
 
   }
@@ -42,6 +44,34 @@ export class MainComponent implements OnInit {
   getTitle(i: number) {
     return this.featuresService.getTagTitle(i)
   }
+  setFilterFeatures(id: number) {
+    if (this.selectedTagsFeatures.indexOf(id) === -1) {
+      this.selectedTagsFeatures.push(id)
+    } else {
+      let location = this.selectedTagsFeatures.lastIndexOf(id)
+      this.selectedTagsFeatures.splice(location, 1);
+
+    }
+    this.filtered=[];
+    for(var i=0;i<this.selectedTagsFeatures.length;i++){
+      let selectedFeature=this.selectedTagsFeatures[i];
+      for(var j=0;j<this.items.length;j++){
+        let product=this.items[j];
+        for (var c = 0; c < product.tagId.length; c++) {
+          if(selectedFeature===product.tagId[c]){
+            if(this.filtered.indexOf(product) === -1){
+              this.filtered.push(product);
+            }
+          }
+        }
+      }
+    }
+    if(this.selectedTagsFeatures.length===0){
+      this.filterList = this.product;
+    }else{
+      this.filterList=this.filtered;
+    }
+  }
   setFilter(id: number) {
 
 
@@ -51,7 +81,7 @@ export class MainComponent implements OnInit {
       let location = this.selectedTags.lastIndexOf(id);
       this.selectedTags.splice(location, 1)
     }
-    console.log(this.selectedTags)
+  
     this.filtered = []
     for (var i = 0; i < this.selectedTags.length; i++) {
       let selectedTag = this.selectedTags[i];
@@ -90,6 +120,8 @@ export class MainComponent implements OnInit {
   }
   clearFilter() {
     this.filterList = this.items;
-    this.selectedTags = []
+    this.selectedTags = [];
+    this.selectedTagsFeatures=[]
+    
   }
 }

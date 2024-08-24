@@ -124,6 +124,19 @@
   </div>
 
 </div>
+<div class="felx max-md:hidden" dir="left">
+  <div class=" w-56 items-center h-8 pl-3 pr-2 bg-gray-100 rounded-lg focus:outline-none" id="parent">
+
+    دنبال چه ویژگی هستی؟
+
+    <div class="invisible flex flex-col w-40 mt-1  bg-white shadow-lg " id="child">
+      <div *ngFor="let tag of features" class="flex items-center h-8 px-3 rounded-xl text-sm hover:bg-teal-200 move-left"
+        (click)="setFilterFeatures(tag.id)" [ngClass]="{'bg-red-300':selectedTagsFeatures.lastIndexOf(tag.id) >= 0}">{{tag.title}}</div>
+      <button (click)="clearFilter()" class="bg-blue-300 rounded-lg">  حذف فیلترها</button>
+    </div>
+  </div>
+
+</div>
 <!-- <div class="flex justify-evenly my-8"><span  class="bg-gray-100 rounded-lg"    ></span><button (click)="clearFilter()" class="bg-blue-300 rounded-lg">clear</button></div> -->
 
 
