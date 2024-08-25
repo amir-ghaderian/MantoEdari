@@ -61,7 +61,7 @@ export class ProductService {
         , "قد کار 80",
         "بسته شدن : بسته"]
       , tagId: [0, 8],
-      feauters:[2,1,6]
+      feauters:[2,1,6,0]
     },
     {
       title: "شومیز نواردوزی    ", id: 59, images: ["assets/555.jpeg"], banner: "assets/11.jpg", price: 398000, descroption: ["جنس پارچه:  نخی",
@@ -231,7 +231,7 @@ export class ProductService {
         , "قد کار میدی",
         "بسته شدن : قزن"]
       , tagId: [1, 4, 6],
-      feauters:[]
+      feauters:[,6]
     },
     {
       title: " کت کریستال ", id: 42, images: ["assets/42.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: بابوس ترکیبی با کتان کریستال",

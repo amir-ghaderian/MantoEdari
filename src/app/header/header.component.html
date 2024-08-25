@@ -1,5 +1,5 @@
 <!-- Main navigation container -->
-<nav
+<nav (click)="inClick()"
   class="relative flex w-full  flex-nowrap items-center justify-between py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
   data-te-navbar-ref>
   <div class="flex w-[100%] fixed top-0  h-16 z-10 bg-white  flex-wrap items-center justify-between  ">
@@ -9,9 +9,9 @@
       >
     </span>
     <!-- Hamburger button for mobile view -->
-    <button
+    <button 
       class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
-      type="button"
+      type="button" 
       data-te-collapse-init
       data-te-target="#navbarSupportedContent15"
       aria-controls="navbarSupportedContent15"
@@ -35,7 +35,7 @@
     
 
     <!-- Collapsible navbar container -->
-    <div
+    <div *ngIf="show"
       class="!visible mt-2 hidden flex-grow basis-[99%] items-center bg-white lg:mt-0 lg:!flex lg:basis-auto"
       id="navbarSupportedContent15"
       data-te-collapse-item>

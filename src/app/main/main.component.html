@@ -89,10 +89,24 @@
       class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
   </button>
 </div>
-<div class="hidden justify-between flex-col items-end	w-full h-16	 max-md:flex">
+<div class="hidden justify-between items-start	w-full h-16	 max-md:flex">
   <div class="p-10">
 
-    <div class="dropdown inline-block relative righgt">
+    <div class="dropdown inline-block relative ">
+      <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
+        <span class="mr-1">ویژگی</span>
+        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
+      </button>
+      <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-gray-200 text-right">
+        <li class="" *ngFor="let tag of tags"  (click)="setFilter(tag.id)" [ngClass]="{'bg-red-300':selectedTags.lastIndexOf(tag.id) >= 0}">{{tag.title}}</li>
+        <li class="bg-blue-300" (click)="clearFilter()" >حذف فیلترها</li>
+      </ul>
+    </div>
+  
+  </div>
+  <div class="p-10">
+
+    <div class="dropdown inline-block relative ">
       <button class="bg-gray-300 text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center">
         <span class="mr-1">فیلتر</span>
         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
