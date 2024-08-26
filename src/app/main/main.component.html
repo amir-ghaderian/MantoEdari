@@ -98,7 +98,7 @@
         <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> </svg>
       </button>
       <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-gray-200 text-right">
-        <li class="" *ngFor="let tag of tags"  (click)="setFilter(tag.id)" [ngClass]="{'bg-red-300':selectedTags.lastIndexOf(tag.id) >= 0}">{{tag.title}}</li>
+        <li class="" *ngFor="let tag of features"  (click)="setFilterFeatures(tag.id)" [ngClass]="{'bg-red-300':selectedTagsFeatures.lastIndexOf(tag.id) >= 0}">{{tag.title}}</li>
         <li class="bg-blue-300" (click)="clearFilter()" >حذف فیلترها</li>
       </ul>
     </div>
