@@ -22,3 +22,33 @@ select {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(calc(-100% + (6*300px)));
+  }
+ 
+}
+.container :hover{
+  animation-play-state: paused;
+}
+
+@media (max-width: 1450px) {
+  .container .carousel-items {
+    animation: carouselAnim 60s infinite alternate linear;
+
+  }
+  @keyframes carouselAnim {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(calc(-100% + (5*300px)));
+    }
+  }
+ 
+}
+
+

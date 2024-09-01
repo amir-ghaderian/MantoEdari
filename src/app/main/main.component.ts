@@ -21,10 +21,11 @@ export class MainComponent implements OnInit {
   currentImge: string[] = [];
   currentIndex: number[] = [];
   features: any;
+
  
 
 
-  constructor(public ps: ProductService, tagServise: TagService, public featuresService: FeaturesService) {
+  constructor(public ps: ProductService,public tagServise: TagService, public featuresService: FeaturesService) {
     this.items = ps.clothes;
     this.filterList = this.items;
     this.tags = tagServise.tags;
@@ -43,6 +44,9 @@ export class MainComponent implements OnInit {
 
   getTitle(i: number) {
     return this.featuresService.getTagTitle(i)
+  }
+  getTitleTag(i: number) {
+    return this.tagServise.getTagTitle(i)
   }
   setFilterFeatures(id: number) {
     if (this.selectedTagsFeatures.indexOf(id) === -1) {
