@@ -1,10 +1,10 @@
-<div class=" flex  w-full justify-center	 mt-16">
+<div class=" flex  w-full justify-center	 mt-16 max-sm:flex-col">
 
 <div class="carousel carousel-center bg-neutral rounded-box max-w-xl space-x-2 p-2 container">
   <div class="carousel-items"   *ngFor="let tag of tags" (click)="setFilter(tag.id)">
-   
-    <div class="bg-cover bg-center w-56 h-96 text-white flex flex-col justify-between"  style="background-image: url({{tag.images}});"
-     > {{tag.title}}
+   <p class="text-white text-center	text-xl">{{tag.title}}</p> 
+    <div class="bg-cover bg-center w-64 h-96 text-white flex flex-col justify-end"  style="background-image: url({{tag.images}});"
+     > 
      <iframe src="https://lottie.host/embed/23cf4f2f-a806-4165-b49f-08d8d21cf18a/6biUYgNCIn.json"></iframe>
     </div>
      

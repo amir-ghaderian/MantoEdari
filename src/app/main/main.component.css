@@ -22,32 +22,23 @@ select {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-@keyframes carouselAnim {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(calc(-100% + (6*300px)));
-  }
- 
-}
-.container :hover{
-  animation-play-state: paused;
-}
+
+
+
 
 @media (max-width: 1450px) {
   .container .carousel-items {
-    animation: carouselAnim 60s infinite alternate linear;
+    animation: carouselAnim 10s infinite alternate ease-in-out;
 
   }
-  @keyframes carouselAnim {
-    from {
-      transform: translate(0, 0);
-    }
-    to {
-      transform: translate(calc(-100% + (5*300px)));
-    }
+  @keyframes carouselAnim  {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-300px); }
+    50% { transform: translateX(-600px); }
+    75% { transform: translateX(-900px); }
+    100% { transform: translateX(-1200px); }
   }
+  
  
 }
 
