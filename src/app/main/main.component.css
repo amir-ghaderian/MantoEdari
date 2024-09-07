@@ -1,3 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap");
+
+* {
+
+  box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+}
+.wrapper {
+  display: flex;
+  width: max-content;
+}
+
+.wrapper .static-txt {
+  color: #413b3b;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  color: #fc6d6d;
+  font-size: 40px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 10px;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  right:  0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+  border-right: 2px solid #fc6d6d;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  100%,
+  60% {
+    right:  0;
+  }
+
+  40% {
+    right: calc(100% + 30px);
+   
+  }
+}
+
 
 
 form {
