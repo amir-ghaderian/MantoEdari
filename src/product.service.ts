@@ -14,7 +14,7 @@ export class ProductService {
   }
   public clothes: any = [
     {
-      title: " مانتو کتی پارچه سرخپوستی  ", id: 64, images: ["assets/563.jpeg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  نخی",
+      title: " مانتو کتی پارچه سرخپوستی  ", id: 64, images: ["assets/563.jpeg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه: یقه گرد  ",
         "جلو دکمه",
         "برش عصایی"
@@ -24,7 +24,7 @@ export class ProductService {
       feauters: [0, 3, 6]
     },
     {
-      title: " یقه گرد دو جیب راه راه   ", id: 63, images: ["assets/562.jpeg"], banner: "assets/11.jpg", price: 298000, descroption: ["جنس پارچه:  نخی",
+      title: " یقه گرد دو جیب راه راه   ", id: 63, images: ["assets/562.jpeg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         " گرد مدل یقه:    یقه ",
         "جلو دکمه",
         "برش عصایی"
@@ -34,207 +34,207 @@ export class ProductService {
       feauters: [0, 5, 3]
     },
     {
-      title: "شومیز یقه گرد دو جیب راه راه   ", id: 62, images: ["assets/560.jpeg", "assets/561.jpeg"], banner: "assets/11.jpg", price: 298000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز یقه گرد دو جیب راه راه   ", id: 62, images: ["assets/560.jpeg", "assets/561.jpeg"], banner: "assets/11.jpg", price: 298000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         " گرد مدل یقه:    یقه ",
         "جلو دکمه",
         "برش عصایی"
         , "قد کار 80",
         "بسته شدن : دکمه"]
       , tagId: [0, 8],
-      feauters: [0,1,3,6,7]
+      feauters: [0, 1, 3, 6, 7]
     },
     {
-      title: "کت مازراتی مجلسی ", id: 61, images: ["assets/557.jpeg", "assets/558.jpeg", "assets/559.jpeg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ مازراتی",
+      title: "کت مازراتی مجلسی ", id: 61, images: ["assets/557.jpeg", "assets/558.jpeg", "assets/559.jpeg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ مازراتی",
         "مدل یقه:  انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
         , "75:قد کت",
         "بسته شدن:   دکمه"]
       , tagId: [5, 1],
-      feauters:[0,4,1]
+      feauters: [0, 4, 1]
     },
     {
-      title: "شومیز جلو بسته ماری    ", id: 60, images: ["assets/556.jpeg"], banner: "assets/11.jpg", price: 398000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز جلو بسته ماری    ", id: 60, images: ["assets/556.jpeg"], banner: "assets/11.jpg", price: 398000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:    یقه مردانه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار 80",
         "بسته شدن : بسته"]
       , tagId: [0, 8],
-      feauters:[2,1,6,0]
+      feauters: [2, 1, 6, 0]
     },
     {
-      title: "شومیز نواردوزی    ", id: 59, images: ["assets/555.jpeg"], banner: "assets/11.jpg", price: 398000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز نواردوزی    ", id: 59, images: ["assets/555.jpeg"], banner: "assets/11.jpg", price: 398000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:    یقه مردانه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار 80",
         "بسته شدن : دکمه"]
       , tagId: [0, 8],
-      feauters:[0,1,6,7]
+      feauters: [0, 1, 6, 7]
     },
     {
-      title: "شومیز گیس بافت   ", id: 58, images: ["assets/554.jpeg"], banner: "assets/11.jpg", price: 398000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز گیس بافت   ", id: 58, images: ["assets/554.jpeg"], banner: "assets/11.jpg", price: 398000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:    یقه مردانه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار 80",
         "بسته شدن : دکمه"]
       , tagId: [0, 8],
-      feauters:[0,1,7]
+      feauters: [0, 1, 7]
     },
     {
-      title: "شومیز ماری  ", id: 57, images: ["assets/551.jpeg", "assets/552.jpeg"], banner: "assets/11.jpg", price: 398000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز ماری  ", id: 57, images: ["assets/551.jpeg", "assets/552.jpeg"], banner: "assets/11.jpg", price: 398000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:    یقه مردانه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار 80",
         "بسته شدن : دکمه"]
       , tagId: [0, 8],
-      feauters:[0,7]
+      feauters: [0, 7]
     },
     {
-      title: "کفتان رخ   ", id: 56, images: ["assets/544.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  نخی",
+      title: "کفتان رخ   ", id: 56, images: ["assets/544.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه: بدون یقه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار بلند",
         "بسته شدن : بسته"]
       , tagId: [7],
-      feauters:[2,5,6]
+      feauters: [2, 5, 6]
     },
     {
-      title: "شومبز رنگی گیس بافت  ", id: 55, images: ["assets/538.JPG", "assets/534.JPG"], banner: "assets/11.jpg", price: 448000, descroption: ["جنس پارچه:  نخی",
+      title: "شومبز رنگی گیس بافت  ", id: 55, images: ["assets/538.JPG", "assets/534.JPG"], banner: "assets/11.jpg", price: 448000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:   یقه مردانه ",
         "جلو دکمه",
         "برش عصایی"
         , "قد کار شومیز",
         "بسته شدن : دکمه"]
       , tagId: [0, 8, 4],
-      feauters:[1,6]
+      feauters: [1, 6]
     },
     {
-      title: " لنین دکمه پرچی برشکا   ", id: 54, images: ["assets/531.JPG", "assets/533.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: " لنین دکمه پرچی برشکا   ", id: 54, images: ["assets/531.JPG", "assets/533.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه: بدون یقه",
         "جلو دکمه",
         "برش عصایی"
         , "قد کار کتی",
         "بسته شدن : دکمه"]
       , tagId: [0, 8, 4],
-      feauters:[1,6]
+      feauters: [1, 6]
     },
     {
-      title: " لین جلوبسته پایین ریش", id: 53, images: ["assets/526.JPG", "assets/540.JPG", "assets/527.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: " لین جلوبسته پایین ریش", id: 53, images: ["assets/526.JPG", "assets/540.JPG", "assets/527.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
         , "قد کار کتی",
         "بسته شدن : باز"]
       , tagId: [0, 8, 4],
-      feauters:[2,6]
+      feauters: [2, 6]
     },
     {
-      title: "سارافون و کت گلدوزی ", id: 52, images: ["assets/525.JPG", "assets/553.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: "سارافون و کت گلدوزی ", id: 52, images: ["assets/525.JPG", "assets/553.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
         , "قد کار کتی",
         "بسته شدن : باز"]
       , tagId: [1, 7,],
-      feauters:[5,2,7]
+      feauters: [5, 2, 7]
     },
     {
-      title: "لنین کتی", id: 51, images: ["assets/523.JPG", "assets/528.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: "لنین کتی", id: 51, images: ["assets/523.JPG", "assets/528.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
         , "قد کار کتی",
         "بسته شدن : باز"]
       , tagId: [0, 4, 6],
-      feauters:[6,4]
+      feauters: [6, 4]
     },
     {
-      title: "کفتان لنین کمر پهن", id: 50, images: ["assets/522.JPG", "assets/547.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  نخی",
+      title: "کفتان لنین کمر پهن", id: 50, images: ["assets/522.JPG", "assets/547.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه: بدون یقه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار بلند",
         "بسته شدن : باز"]
       , tagId: [7],
-      feauters:[2,3,5,6]
+      feauters: [2, 3, 5, 6]
     },
     {
-      title: "کفتان تیکه دوزی ", id: 49, images: ["assets/520.JPG", "assets/521.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  نخی",
+      title: "کفتان تیکه دوزی ", id: 49, images: ["assets/520.JPG", "assets/521.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه: بدون یقه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار بلند",
         "بسته شدن : باز"]
       , tagId: [7],
-      feauters:[2,5,6]
+      feauters: [2, 5, 6]
     },
     {
-      title: "شومیز رنگی اسمارتیزی  ", id: 48, images: ["assets/514.JPG", "assets/532.JPG"], banner: "assets/11.jpg", price: 448000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز رنگی اسمارتیزی  ", id: 48, images: ["assets/514.JPG", "assets/532.JPG"], banner: "assets/11.jpg", price: 448000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:   یقه مردانه ",
         "جلو دکمه",
         "برش عصایی"
         , "قد کار شومیز",
         "بسته شدن : دکمه"]
       , tagId: [0, 8],
-      feauters:[0,1,6,7]
+      feauters: [0, 1, 6, 7]
     },
     {
-      title: "نخی آستین گیپور   ", id: 47, images: ["assets/56.png"], banner: "assets/11.jpg", price: 448000, descroption: ["جنس پارچه:  نخی",
+      title: "نخی آستین گیپور   ", id: 47, images: ["assets/56.png"], banner: "assets/11.jpg", price: 448000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "  مدل یقه:  بدون یقه ",
         "جلو باز",
         "برش عصایی"
         , "قد کار شومیز",
         "بسته شدن : بندی"]
       , tagId: [1, 4, 6],
-      feauters:[6,3]
+      feauters: [6, 3]
     },
     {
-      title: "شومیز ماهی  ", id: 46, images: ["assets/55.png"], banner: "assets/11.jpg", price: 448000, descroption: ["جنس پارچه:  نخی",
+      title: "شومیز ماهی  ", id: 46, images: ["assets/55.png"], banner: "assets/11.jpg", price: 448000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         " مدل یقه:  مردانه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار شومیز",
         "بسته شدن : دکمه"]
       , tagId: [1, 4, 6],
-      feauters:[1,6]
+      feauters: [1, 6]
     },
     {
-      title: "کفتان مغزی دار", id: 45, images: ["assets/53.JPG", "assets/546.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  نخی",
+      title: "کفتان مغزی دار", id: 45, images: ["assets/53.JPG", "assets/546.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  نخی",
         "مدل یقه: بدون یقه",
         "جلو بسته",
         "برش عصایی"
         , "قد کار بلند",
         "بسته شدن : بسته"]
       , tagId: [1, 7],
-      feauters:[2,5,7]
+      feauters: [2, 5, 7]
     },
     {
-      title: "لنین خرج کار هندی", id: 44, images: ["assets/52.jpg", "assets/516.JPG", "assets/548.JPG"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: "لنین خرج کار هندی", id: 44, images: ["assets/52.jpg", "assets/516.JPG", "assets/548.JPG"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
         , "قد کار کتی",
         "بسته شدن : بسته"]
       , tagId: [1, 4, 6],
-      feauters:[6,3,0]
+      feauters: [6, 3, 0]
     },
     {
-      title: " گیپوردار مجلسی ", id: 43, images: ["assets/43.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ حریر",
+      title: " گیپوردار مجلسی ", id: 43, images: ["assets/43.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
         , "قد کار میدی",
         "بسته شدن : قزن"]
       , tagId: [1, 4, 6],
-      feauters:[,6]
+      feauters: [, 6]
     },
     {
-      title: " کت کریستال ", id: 42, images: ["assets/42.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: بابوس ترکیبی با کتان کریستال",
+      title: " کت کریستال ", id: 42, images: ["assets/42.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: بابوس ترکیبی با کتان کریستال",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
@@ -243,7 +243,7 @@ export class ProductService {
       , tagId: [5, 0]
     },
     {
-      title: " نواردوزی ", id: 1, images: ["assets/31.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ حریر",
+      title: " نواردوزی ", id: 1, images: ["assets/31.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: بدون یقه",
         "جلو باز",
         "برش عصایی"
@@ -252,7 +252,7 @@ export class ProductService {
       , tagId: [1]
     },
     {
-      title: "کت  پولک دوزی", id: 2, images: ["assets/26.jpg",], banner: "assets/11.jpg", price: 498000, descroption: ["  جنس پارچه: کرپ مازراتی ",
+      title: "کت  پولک دوزی", id: 2, images: ["assets/26.jpg",], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["  جنس پارچه: کرپ مازراتی ",
         "مدل یقه: انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
@@ -261,7 +261,7 @@ export class ProductService {
       , tagId: [2, 1, 5]
     },
     {
-      title: "مانتو کتی مازراتی", id: 3, images: ["assets/41.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ مازراتی",
+      title: "مانتو کتی مازراتی", id: 3, images: ["assets/41.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ مازراتی",
         "مدل یقه: انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
@@ -270,7 +270,7 @@ export class ProductService {
       , tagId: [5, 0]
     },
     {
-      title: "مانتوهندی", id: 4, images: ["assets/23.jpg"], banner: "assets/23.jpg", price: 498000, descroption: ["جنس پارچه: کرپ بابوس",
+      title: "مانتوهندی", id: 4, images: ["assets/23.jpg"], banner: "assets/23.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ بابوس",
         "مدل یقه: گرد",
         "جلوباز ",
         "برش عصایی "
@@ -279,7 +279,7 @@ export class ProductService {
       , tagId: [0, 5]
     },
     {
-      title: "کفتان کرپ", id: 5, images: ["assets/25.jpg"], banner: "assets/11.jpg", price: 598000, descroption: ["جنس پارچه: کرپ ",
+      title: "کفتان کرپ", id: 5, images: ["assets/25.jpg"], banner: "assets/11.jpg", price: 598000, newPrice: 298000, descroption: ["جنس پارچه: کرپ ",
         "مدل یقه: ستاره ای",
         "جلو بسته",
         "برش عصایی"
@@ -288,7 +288,7 @@ export class ProductService {
       , tagId: [7, 5]
     },
     {
-      title: "کت مازراتی مجلسی ", id: 6, images: ["assets/27.jpg", "assets/29.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ مازراتی",
+      title: "کت مازراتی مجلسی ", id: 6, images: ["assets/27.jpg", "assets/29.jpg"], banner: "assets/11.jpg", price: 498000,  newPrice: 298000,descroption: ["جنس پارچه: کرپ مازراتی",
         "مدل یقه:  انگلیسی",
         "جلو لایی کشی شده",
         "برش عصایی2 عدد جیب"
@@ -297,7 +297,7 @@ export class ProductService {
       , tagId: [5, 0]
     },
     {
-      title: " کپ نوار طلایی", id: 7, images: ["assets/28.jpg", "assets/30.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه: کرپ حریر",
+      title: " کپ نوار طلایی", id: 7, images: ["assets/28.jpg", "assets/30.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ حریر",
         "مدل یقه: ستاره ای",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"
@@ -306,7 +306,7 @@ export class ProductService {
       , tagId: [5]
     },
     {
-      title: " سوزن دوزی هندی", id: 8, images: ["assets/24.jpg"], banner: "assets/24.jpg", price: 498000, descroption: ["جنس پارچه: کرپ بابوس",
+      title: " سوزن دوزی هندی", id: 8, images: ["assets/24.jpg"], banner: "assets/24.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ بابوس",
         "مدل یقه:  گرد",
         "برش عصایی"
         , "102:قد کت",
@@ -314,7 +314,7 @@ export class ProductService {
       , tagId: [0, 5]
     },
     {
-      title: " لنین هندی", id: 9, images: ["assets/36.jpg"], banner: "assets/11.jpg", price: 498000, descroption: ["جنس پارچه:  لنین",
+      title: " لنین هندی", id: 9, images: ["assets/36.jpg"], banner: "assets/11.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه:  لنین",
         "مدل یقه: گرد ",
         "جلو آستردار",
         "برش عصایی2 عدد جیب"
@@ -323,7 +323,7 @@ export class ProductService {
       , tagId: [6]
     },
     {
-      title: "لنین کراش", id: 10, images: ["assets/37.jpg"], banner: "assets/10.jpg", price: 498000, descroption: ["جنس پارچه: کرپ کراش",
+      title: "لنین کراش", id: 10, images: ["assets/37.jpg"], banner: "assets/10.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: کرپ کراش",
         "مدل یقه:  گرد",
         "آستین کیمونو ",
         "برش عصایی  "
@@ -332,7 +332,7 @@ export class ProductService {
       , tagId: [3]
     },
     {
-      title: " عبایی کنفی", id: 11, images: ["assets/38.jpg"], banner: "assets/10.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: " عبایی کنفی", id: 11, images: ["assets/38.jpg"], banner: "assets/10.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه:  گرد",
         "آستین کیمونو ",
         "برش عصایی  "
@@ -341,7 +341,7 @@ export class ProductService {
       , tagId: [2]
     },
     {
-      title: " لنین سوزن دوزی ", id: 12, images: ["assets/39.jpg"], banner: "assets/10.jpg", price: 498000, descroption: ["جنس پارچه: لنین ",
+      title: " لنین سوزن دوزی ", id: 12, images: ["assets/39.jpg"], banner: "assets/10.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: لنین ",
         "مدل یقه:  گرد",
         "حلقه آستین کتی  ",
         "برش عصایی  "
@@ -350,7 +350,7 @@ export class ProductService {
       , tagId: [5, 0]
     },
     {
-      title: "   لنین ژاکارد جناقی ", id: 13, images: ["assets/40.jpg"], banner: "assets/10.jpg", price: 498000, descroption: ["جنس پارچه: ژاکارد ",
+      title: "   لنین ژاکارد جناقی ", id: 13, images: ["assets/40.jpg"], banner: "assets/10.jpg", price: 498000, newPrice: 298000, descroption: ["جنس پارچه: ژاکارد ",
         "مدل یقه:  گرد",
         "حلقه آستین کتی  ",
         "برش عصایی  "
